@@ -176,8 +176,6 @@ The workflow is parallelized with **MPI4Py**, enabling efficient computation on 
 ---
 
 ## Workflow Diagram
-
-```mermaid
 flowchart TD
     A[Raw Data: PVO OETP Ionopause TAB+LBL] --> B[Data Loading & Cleaning]
     B --> C[Compute Full UTC Datetime & Derived Metrics]
@@ -191,5 +189,6 @@ flowchart TD
     H --> J[Saved 3D Plots & Data (/plots_3d)]
     I --> K[Publication-ready Figures & Analysis]
     J --> K
+
 
 
