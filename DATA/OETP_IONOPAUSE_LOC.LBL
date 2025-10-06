@@ -1,0 +1,213 @@
+PDS_VERSION_ID                  = PDS3                                        
+DATA_SET_ID                     = "PVO-V-OETP-5-IONOPAUSELOCATION-V1.0"       
+STANDARD_DATA_PRODUCT_ID        = "OETP IONPAUSE LOC"                         
+PRODUCT_ID                      = "OETP_IONOPAUSE_LOC"                        
+PRODUCT_TYPE                    = "DERIVED"                                   
+PRODUCT_VERSION_ID              = "1"                                         
+PRODUCT_CREATION_TIME           = 2010-07-01T06:52:19                         
+                                                                              
+RECORD_TYPE                     = FIXED_LENGTH                                
+RECORD_BYTES                    = 116                                         
+FILE_RECORDS                    = 1721                                        
+                                                                              
+START_TIME                      = 1978-12-05T15:07:34.817                     
+STOP_TIME                       = 1985-07-22T22:46:18.000                     
+SPACECRAFT_CLOCK_START_COUNT    = "UNK"                                       
+SPACECRAFT_CLOCK_STOP_COUNT     = "UNK"                                       
+                                                                              
+INSTRUMENT_HOST_NAME            = "PIONEER VENUS ORBITER"                     
+INSTRUMENT_HOST_ID              = "PVO"                                       
+MISSION_PHASE_NAME              = "VENUS ORBITAL OPERATIONS"                  
+TARGET_NAME                     = "VENUS"                                     
+INSTRUMENT_NAME                 = "ELECTRON TEMPERATURE PROBE"                
+INSTRUMENT_ID                   = "OETP"                                      
+                                                                              
+^TABLE                          = "OETP_IONOPAUSE_LOC.TAB"                    
+MD5_CHECKSUM                    = "c0bb3e26258dac775343b7da356d144d"          
+                                                                              
+OBJECT                          = TABLE                                       
+  INTERCHANGE_FORMAT            = ASCII                                       
+  ROWS                          = 1721                                        
+  COLUMNS                       = 15                                          
+  ROW_BYTES                     = 116                                         
+                                                                              
+  OBJECT                        = COLUMN                                      
+    NAME                        = "ORBIT"                                     
+    COLUMN_NUMBER               = 1                                           
+    DATA_TYPE                   = MSB_INTEGER                                 
+    START_BYTE                  = 2                                           
+    BYTES                       = 4                                           
+    FORMAT                      = "I4"                                        
+    DESCRIPTION                 = "PVO orbit number (valid 1-5055)"           
+  END_OBJECT                    = COLUMN                                      
+                                                                              
+  OBJECT                        = COLUMN                                      
+    NAME                        = "DATE"                                      
+    COLUMN_NUMBER               = 2                                           
+    DATA_TYPE                   = ASCII_INTEGER                               
+    START_BYTE                  = 8                                           
+    BYTES                       = 5                                           
+    FORMAT                      = "I5"                                        
+    DESCRIPTION                 = "                                           
+      Date in the form YYDOY where YY is the 2 digit year of 1900, and the DOY
+      is the day-of-year (Jan 1 =1)."                                         
+  END_OBJECT                    = COLUMN                                      
+                                                                              
+  OBJECT                        = COLUMN                                      
+    NAME                        = "PERIAPSIS_TIME"                            
+    COLUMN_NUMBER               = 3                                           
+    DATA_TYPE                   = CHARACTER                                   
+    START_BYTE                  = 15                                          
+    BYTES                       = 8                                           
+    FORMAT                      = "A8"                                        
+    DESCRIPTION                 = "                                           
+      The time of the orbital periapsis given in the format HH:MM:SS where HH 
+      is the 2 digit hour, MM in the 2 digit minute, and SS is the 2 digit    
+      second."                                                                
+  END_OBJECT                    = COLUMN                                      
+                                                                              
+  OBJECT                        = COLUMN                                      
+    NAME                        = "INBOUND_SECONDS"                           
+    COLUMN_NUMBER               = 4                                           
+    DATA_TYPE                   = ASCII_INTEGER                               
+    START_BYTE                  = 28                                          
+    BYTES                       = 5                                           
+    FORMAT                      = "I5"                                        
+  DESCRIPTION                   = "The second-of-day of the inbound bowshock  
+                                   crossing."                                 
+  END_OBJECT                    = COLUMN                                      
+                                                                              
+  OBJECT                        = COLUMN                                      
+    NAME                        = "INBOUND_TIME"                              
+    COLUMN_NUMBER               = 5                                           
+    DATA_TYPE                   = CHARACTER                                   
+    START_BYTE                  = 35                                          
+    BYTES                       = 8                                           
+    FORMAT                      = "A8"                                        
+    DESCRIPTION                 = "                                           
+      The time of the inbound bowshock crossing given in the format HH:MM:SS  
+      where HH is the 2 digit hour, MM in the 2 digit minute, and SS is the   
+      2 digit second."                                                        
+  END_OBJECT                    = COLUMN                                      
+                                                                              
+  OBJECT                        = COLUMN                                      
+    NAME                        = "INBOUND_LATITUDE"                          
+    COLUMN_NUMBER               = 6                                           
+    DATA_TYPE                   = IEEE_REAL                                   
+    START_BYTE                  = 46                                          
+    BYTES                       = 4                                           
+    FORMAT                      = "F5.1"                                      
+    DESCRIPTION                 = "                                           
+       The venusian latitude of the spacecraft at inbound bowshock crossing   
+       given in degrees."                                                     
+  END_OBJECT                    = COLUMN                                      
+                                                                              
+  OBJECT                        = COLUMN                                      
+    NAME                        = "INBOUND_LOCAL_SOLAR_TIME"                  
+    COLUMN_NUMBER               = 7                                           
+    DATA_TYPE                   = IEEE_REAL                                   
+    START_BYTE                  = 51                                          
+    BYTES                       = 4                                           
+    FORMAT                      = "F4.1"                                      
+    DESCRIPTION                 = "                                           
+       The local solar time of the spacecraft at inbound bowshock crossing    
+       given in hours."                                                       
+  END_OBJECT                    = COLUMN                                      
+                                                                              
+  OBJECT                        = COLUMN                                      
+    NAME                        = "INBOUND_ALTITUDE"                          
+    COLUMN_NUMBER               = 8                                           
+    DATA_TYPE                   = IEEE_REAL                                   
+    START_BYTE                  = 56                                          
+    BYTES                       = 6                                           
+    FORMAT                      = "F6."                                       
+    DESCRIPTION                 = "                                           
+      The altitude of the spacecraft at inbound bowshock crossing given in    
+      kilometers."                                                            
+  END_OBJECT                    = COLUMN                                      
+                                                                              
+  OBJECT                       = COLUMN                                       
+    NAME                       = INBOUND_SOLAR_ZENITH_ANGLE                   
+    COLUMN_NUMBER              = 9                                            
+    DATA_TYPE                  = IEEE_REAL                                    
+    START_BYTE                 = 64                                           
+    BYTES                      = 5                                            
+    FORMAT                     = "F5.1"                                       
+    DESCRIPTION                = "                                            
+      The solar zenith angle of the spacecraft at the inbound bowshock        
+      crossing given in degrees."                                             
+  END_OBJECT               = COLUMN                                           
+                                                                              
+  OBJECT                       = COLUMN                                       
+    NAME                       = OUTBOUND_SECONDS                             
+    COLUMN_NUMBER              = 10                                           
+    DATA_TYPE                  = ASCII_INTEGER                                
+    START_BYTE                 = 74                                           
+    BYTES                      = 5                                            
+    FORMAT                     = "I5"                                         
+    DESCRIPTION                = "The second-of-day of the outbound bowshock  
+                                  crossing."                                  
+  END_OBJECT                   = COLUMN                                       
+                                                                              
+  OBJECT                       = COLUMN                                       
+    NAME                       = OUTBOUND_TIME                                
+    COLUMN_NUMBER              = 11                                           
+    DATA_TYPE                  = CHARACTER                                    
+    START_BYTE                 = 81                                           
+    BYTES                      = 8                                            
+    FORMAT                     = "A8"                                         
+    DESCRIPTION                = "                                            
+      The time of the outbound bowshock crossing given in the format HH:MM:SS 
+      where HH is the 2 digit hour, MM in the 2 digit minute, and SS is the 2 
+      digit second."                                                          
+  END_OBJECT                   = COLUMN                                       
+                                                                              
+  OBJECT                       = COLUMN                                       
+    NAME                       = OUTBOUND_LATITUDE                            
+    COLUMN_NUMBER              = 12                                           
+    DATA_TYPE                  = IEEE_REAL                                    
+    START_BYTE                 = 91                                           
+    BYTES                      = 5                                            
+    FORMAT                     = "F5.1"                                       
+    DESCRIPTION                = "                                            
+      The venusian latitude of the spacecraft at outbound bowshock crossing   
+      given in degrees."                                                      
+  END_OBJECT                   = COLUMN                                       
+                                                                              
+  OBJECT                       = COLUMN                                       
+    NAME                       = OUTBOUND_LOCAL_SOLAR_TIME                    
+    COLUMN_NUMBER              = 13                                           
+    DATA_TYPE                  = IEEE_REAL                                    
+    START_BYTE                 = 97                                           
+    BYTES                      = 4                                            
+    FORMAT                     = "F4.1"                                       
+    DESCRIPTION                = "                                            
+      The local solar time of the spacecraft at outbound bowshock crossing    
+      given in hours."                                                        
+  END_OBJECT                   = COLUMN                                       
+                                                                              
+  OBJECT                       = COLUMN                                       
+    NAME                       = OUTBOUND_ALTITUDE                            
+    COLUMN_NUMBER              = 14                                           
+    DATA_TYPE                  = IEEE_REAL                                    
+    START_BYTE                 = 102                                          
+    BYTES                      = 6                                            
+    FORMAT                     = "F6."                                        
+    DESCRIPTION                = "                                            
+      The altitude of the spacecraft at outbound bowshock crossing given in   
+      kilometers."                                                            
+  END_OBJECT                   = COLUMN                                       
+                                                                              
+  OBJECT                       = COLUMN                                       
+    NAME                       = OUTBOUND_SOLAR_ZENITH_ANGLE                  
+    COLUMN_NUMBER              = 15                                           
+    DATA_TYPE                  = IEEE_REAL                                    
+    START_BYTE                 = 110                                          
+    BYTES                      = 5                                            
+    FORMAT                     = "F5.1"                                       
+    DESCRIPTION                = "                                            
+      The solar zenith angle of the spacecraft at the outbound bowshock       
+      crossing given in degrees."                                             
+  END_OBJECT                   = COLUMN                                       
+ END_OBJECT                    = TABLE                                        
+END                                                                           

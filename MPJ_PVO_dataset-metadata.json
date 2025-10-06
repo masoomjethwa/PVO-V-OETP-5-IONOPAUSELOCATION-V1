@@ -1,0 +1,29 @@
+
+{
+  "title": "venus-ionopause-analysis",
+  "id": "your-kaggle-username/venus-ionopause-analysis",
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
+  "subtitle": "Comprehensive analysis and visualization of Pioneer Venus Orbiter ionopause crossings with 2D and 3D plots",
+  "description": "This project processes ionopause crossing data from the Pioneer Venus Orbiter Electron Temperature Probe (OETP) dataset (1978-1992). It generates 25+ publication-grade 2D and 3D plots, including Venus-centered 3D visualizations of inbound and outbound crossings, and logs all plot outputs. Parallelized with MPI for efficiency.",
+  "isPrivate": false,
+  "keywords": ["venus", "ionosphere", "ionopause", "pioneer venus orbiter", "plasma physics", "3D visualization", "MPI", "pandas", "matplotlib", "seaborn", "plotly", "space science", "planetary data"],
+  "isPrivate": false,
+  "resources": [
+    {
+      "path": "DATA/OETP_IONOPAUSE_LOC.TAB"
+    },
+    {
+      "path": "DATA/OETP_IONOPAUSE_LOC.LBL"
+    },
+    {
+      "path": "try7.py"
+    },
+    {
+      "path": "README.md"
+    }
+  ]
+}

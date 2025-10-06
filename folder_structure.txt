@@ -1,0 +1,27 @@
+PVO-V-OETP-5-IONOPAUSELOCATION-V1.0/
+│
+├─ DATA/
+│   ├─ OETP_IONOPAUSE_LOC.TAB        # Raw tabular data
+│   └─ OETP_IONOPAUSE_LOC.LBL        # Metadata for TAB file
+│
+├─ plots/                            # 2D EDA plots
+│   ├─ Plot1_inbound_altitude_hist.png
+│   ├─ Plot1_inbound_altitude_hist.csv
+│   ├─ Plot2_outbound_altitude_hist.png
+│   ├─ Plot2_outbound_altitude_hist.csv
+│   ├─ Plot3_inbound_altitude_vs_time.png
+│   ├─ Plot3_inbound_altitude_vs_time.csv
+│   └─ ... (up to Plot26_{name}.png / Plot26_{name}.csv)
+│
+├─ plots_3d/                         # 3D and interactive plots
+│   ├─ Plot1_venus_ionopause_3d.png
+│   ├─ Plot1_venus_ionopause_3d.csv
+│   ├─ Plot2_venus_spherical_plot.png
+│   └─ Plot2_venus_spherical_plot.csv
+│
+├─ try7.py                            # MPI-enabled Python script
+├─ README.md                           # Project documentation
+├─ requirements.txt                    # Python dependencies
+├─ dataset-metadata.json               # Kaggle-ready metadata
+├─ .gitignore                          # Excludes plots, pycache, etc.
+└─ LICENSE                             # MIT/CC0 license
